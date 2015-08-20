@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html >
+<head>
+	<meta charset="UTF 8">
+	<title>Quiz2</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="/css/bootstrap_theme.css">
+	<link rel="stylesheet" type="text/css" href="/css/site.css">
+</head>
+<body id="body"> 
+	<div id="topbar"class="well">
+		<h1 id="header">Quiz App<Span id="two">2</span></h1>
+	</div>
+	<div id="startquizbg" align="center">
+		<button id="startbtn" onclick="startQuiz()">Start Quiz<span id="exclaim">!</span></button>
+	</div>
+	<br />
+	<div id="quiz">
+		<form class="well">
+			<p id="question"></p>
+			<label id="label-0"></label>
+			<input type='radio' id="0" name='answer'/>
+			<br />
+			<label id="label-1"></label>
+			<input type='radio' id="1" name='answer'/>
+			<br />
+			<label id="label-2"></label>
+			<input type='radio' id="2" name='answer' />
+			<br />
+			<label id="label-3"></label>
+			<input type='radio' id="3" name='answer'/>			 <br />
+		</form>
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<button id="submitbtn" onclick="chooseAnswer()">Submit</button>
+		<br />
+		<br />
+		<button id="nextquestionbtn" onclick='nextQuestions()'>Next Question <span id="arrow"> ></span></button>
+		<span></span>
+		<p id="score"><strong>SCORE:</strong>
+			<br />
+			<textarea id="final"></textarea></p>
+		</div>
+		<script src="jquery/dist/jquery.js"></script>
+		<script src="/javascript/app.js"></script>
+	</body>
+	</html>
